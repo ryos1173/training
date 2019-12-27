@@ -24,12 +24,24 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-md-2">メールアドレス</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="email" value="{{ old('email') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <div class="form-group row">
                             <label class="col-md-2">性別</label>
                             <div class="col-md-10">
                                 <input type="radio" class="radio" name="gender" value="male">男性
                                 <input type="radio" class="radio" name="gender" value="female">女性
                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2">年齢</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="age" value="{{ old('age') }}">
                         </div>
                     </div>
                     <div class="form-group row">
