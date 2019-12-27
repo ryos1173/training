@@ -26,7 +26,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">メールアドレス</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="email" value="{{ old('email') }}">
+                            <input type="email" class="form-control" name="email" value="{{ old('email') }}">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -41,25 +41,29 @@
                     <div class="form-group row">
                         <label class="col-md-2">年齢</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="age" value="{{ old('age') }}">
+                            <select name="age">
+                                @for($i=18;$i <= 80;$i++)
+                                <option value="{{$i}}">{{$i}}</option>
+                                @endfor
+                            </select>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">身長</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="height" value="{{ old('height') }}">
+                            <input type="number" class="form-control" name="height" value="{{ old('height') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">体重</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="weight" value="{{ old('weight') }}">
+                            <input type="number" class="form-control" name="weight" value="{{ old('weight') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">体脂肪率</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="bfp" value="{{ old('bfp') }}">
+                            <input type="number" class="form-control" name="bfp" value="{{ old('bfp') }}">
                         </div>
                     </div>
                     <div class="form-group row">
