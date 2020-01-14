@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>トレマネ</title>
 
-        <!-- Fonts -->
+         <!--Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
+         <!--Styles -->
         <style>
             html, body {
                 background-color: #fff;
@@ -81,18 +82,32 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    トレマネ
+                </div>
+                <div style="text-align: center; margin-bottom: 3em;">
+                    <h4>トレマネは、あなた専用のトレーニング記録ツールです。</h4>
+                    <br>
+                    <h4>ご利用が初めての方は、まずはアカウント登録からどうぞ。</h4>
+                </div>
+                <div class="text-center">
+                    <a href="{{ route('login') }}" class="btn btn-primary">
+                        ログイン
+                    </a>
+                    <span style="padding-right: 1.0em;"></span>
+                    <a href="{{ route('register') }}" class="btn btn-primary">
+                        アカウント登録
+                    </a>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <!--<div class="links">-->
+                <!--    <a href="https://laravel.com/docs">Docs</a>-->
+                <!--    <a href="https://laracasts.com">Laracasts</a>-->
+                <!--    <a href="https://laravel-news.com">News</a>-->
+                <!--    <a href="https://blog.laravel.com">Blog</a>-->
+                <!--    <a href="https://nova.laravel.com">Nova</a>-->
+                <!--    <a href="https://forge.laravel.com">Forge</a>-->
+                <!--    <a href="https://github.com/laravel/laravel">GitHub</a>-->
+                <!--</div>-->
             </div>
         </div>
     </body>

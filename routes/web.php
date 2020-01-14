@@ -20,8 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
-    Route::get('new/create', 'Admin\NewsController@add');
-    Route::post('new/create', 'Admin\NewsController@create');
+    Route::get('new/create', 'Admin\NewClientController@add');
+    Route::post('new/create', 'Admin\NewClientController@create');
     Route::get('profile/create','Admin\ProfileController@add');
     Route::post('profile/create','Admin\ProfileController@create');
 });
