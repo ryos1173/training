@@ -5,8 +5,11 @@ return [
     'E-Mail Address' => 'メールアドレス',
     'Password' => 'パスワード',
     'Remember Me' => 'ログイン情報を記憶する',
-    'Register' => 'ユーザ登録',
+    'Register' => 'アカウント登録',
     'Name' => '名前',
     'Confirm Password' => 'パスワード(確認)',
-    'Forgot Your Password' => 'パスワードを忘れましたか？',
+    'Forgot Your Password?' => 'パスワードを忘れましたか？',
+    'Reset Password' => 'パスワードをリセットする',
+    'Forgot Your Password?' => 'パスワードを忘れましたか？',
+
     ];
