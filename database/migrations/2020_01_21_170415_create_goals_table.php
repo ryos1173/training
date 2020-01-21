@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBodiesTable extends Migration
+class CreateGoalsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateBodiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('bodies', function (Blueprint $table) {
+        Schema::create('goals', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('weight');
-            $table->integer('bfp');
-            $table->string('memo');  
-            $table->string('image_path')->nullable(); 
-            $table->integer('user_id');  
+            $table->integer('goal');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateBodiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bodies');
+        Schema::dropIfExists('goals');
     }
 }

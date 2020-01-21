@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Body;
+use App\Goal;
 use Illuminate\Support\Facades\Auth;
 
 class ProfileController extends Controller
@@ -38,28 +39,29 @@ class ProfileController extends Controller
     
      public function index(Request $request)
     {
-        $posts = Body::all();
+        $posts = Body::where("user_id",Auth::user()->id);
+        
         return view('user.profile.index', ['posts' => $posts]);
     }
 
     
-    public function edit(Request $request)
-    {
+    // public function edit(Request $request)
+    // {
         // $body = Body::find($request->id);
         // if (empty($body)) {
         // abort(404);    
         // }
-        return view('user.profile.edit');
-    }
+    //     return view('user.profile.edit');
+    // }
     
-    public function update()
-    {
+    // public function update(Request $request)
+    // {
         // $this->validate($request, Body::$rules);
         // $body = Body::find($request->id);
         // $body_form = $request->all();
         // unset($body_form['_token']);
         // $body->fill($body_form)->save();
         
-    return redirect('user/mypage');
-    }
+    // return redirect('user/mypage');
+    // }
 }

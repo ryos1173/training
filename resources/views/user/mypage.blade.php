@@ -10,8 +10,8 @@
                 <div class="card-body">
                     <h4>現在の体重</h4>
                     <span class="now-weight">{{ $body->weight }}Kg</span>
-                     <h4>目標体重まで</h4>
-                    <span class="now-weight">{{ $body->gole }}Kg</span>
+                     <h4>目標体重</h4>
+                    <span class="now-weight">{{ $body->weight }}Kg</span>
                     <h4></h4>
                 </div>
             </div>
@@ -21,7 +21,7 @@
             <div class="card">
                 <div class="card-header">記録を追加する</div>
                 <div class="card-body">
-                    <a href="{{ url('/user/profile/edit') }}" class="btn btn-primary">
+                    <a href="{{ url('/user/profile/create') }}" class="btn btn-primary">
                                 BODY追加
                     </a>
                 </div>

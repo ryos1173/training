@@ -32,6 +32,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
 Route::get('user/mypage', 'User\MypageController@index');
 
 Route::group(['prefix' => 'user', 'middleware' => 'auth'], function(){
+    Route::get('profile/goal', 'User\GoalController@add');
+    Route::post('profile/goal', 'User\GoalController@create');
+});
+
+Route::group(['prefix' => 'user', 'middleware' => 'auth'], function(){
     Route::get('profile/index', 'User\ProfileController@index');
     Route::get('profile/create', 'User\ProfileController@add');
     Route::post('profile/create', 'User\ProfileController@create');

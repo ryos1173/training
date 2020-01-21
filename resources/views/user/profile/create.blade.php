@@ -19,14 +19,14 @@
                     @endif
                     <div class="form-group row">
                         <div class="col-md-10">
-                            <input type="number" class="form-control" name="weight" value="{{ old('weight') }}" placeholder="現在の体重">
+                            <input type="number" class="form-control" name="weight" value="{{ old('weight') }}" >
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-md-10">
-                            <input type="number" class="form-control" name="gole" value="{{ old('gole') }}" placeholder="目標の体重">
-                        </div>
-                    </div>
+                    <!--<div class="form-group row">-->
+                    <!--    <div class="col-md-10">-->
+                    <!--        <input type="number" class="form-control" name="gole" value="{{ old('gole') }}" placeholder="目標の体重">-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <div class="form-group row">
                         <div class="col-md-10">
                             <input type="number" class="form-control" name="bfp" value="{{ old('bfp') }}"　placeholder="体脂肪率">

@@ -14,8 +14,4 @@ class Body extends Model
         'memo' => 'required',
         );
     
-    public function user()
-    {
-        return $this->belongsTo('App\User');
-    }
 }

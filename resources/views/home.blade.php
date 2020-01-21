@@ -3,15 +3,15 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 mx-auto text-center">
             <h2>Wellcome to BULK LOG</h2>
 
             <div class="card">
-                <div class="card-header">BODY情報を登録しましょう</div>
+                <div class="card-header">目標を設定しましょう</div>
 
                 <div class="card-body">
-                     <a href="{{ url('/user/profile/create') }}" class="btn btn-primary">
-                                BODY作成
+                     <a href="{{ url('/user/profile/goal') }}" class="btn btn-primary">
+                                目標設置
                             </a>
                     
                     <!--@if (session('status'))-->
