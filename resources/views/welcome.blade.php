@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>トレマネ</title>
+        <title>BLUK LOG</title>
 
          <!--Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -69,7 +69,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('user/mypage') }}">MyPage</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -82,10 +82,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    トレマネ
+                    BLUK LOG
                 </div>
                 <div style="text-align: center; margin-bottom: 3em;">
-                    <h4>トレマネは、あなた専用のトレーニング記録ツールです。</h4>
+                    <h4>BLUK LOGは、増量トレーニー専用の記録ツールです。</h4>
                     <br>
                     <h4>ご利用が初めての方は、まずはアカウント登録からどうぞ。</h4>
                 </div>

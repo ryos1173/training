@@ -146,7 +146,9 @@ return [
     */
 
     'attributes' => [
-        
+        'weight' => '体重',
+        'bfp' => '体脂肪率',
+        'memo' => 'メモ'
         ],
 
 ];

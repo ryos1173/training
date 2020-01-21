@@ -1,16 +1,17 @@
-@extends('layouts.admin')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <h2>Wellcome to トレマネ</h2>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h2>Wellcome to BULK LOG</h2>
+
             <div class="card">
-                <div class="card-header">MY BODY情報を登録しましょう</div>
+                <div class="card-header">BODY情報を登録しましょう</div>
 
                 <div class="card-body">
-                     <a href="{{ route('login') }}" class="btn btn-primary">
-                                MY BODY作成
+                     <a href="{{ url('/user/profile/create') }}" class="btn btn-primary">
+                                BODY作成
                             </a>
                     
                     <!--@if (session('status'))-->

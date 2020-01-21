@@ -1,6 +1,6 @@
 <header>
     <nav class="my-navbar">
-        <a $id="logout_icon" class="my-navbar-brand" href="/home">トレマネ</a>
+        <a $id="logout_icon" class="my-navbar-brand" href="/home">BULK LOG</a>
         <div class="my-nabvar-control">
             @if(Auth::check())
                 <span class="my-navbar-item">ようこそ、{{ Auth::user()->name }}さん</span>
