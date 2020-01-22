@@ -11,7 +11,7 @@
 
                 <div class="card-body">
                      <a href="{{ url('/user/profile/goal') }}" class="btn btn-primary">
-                                目標設置
+                                目標設定
                             </a>
                     
                     <!--@if (session('status'))-->

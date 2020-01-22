@@ -16,9 +16,9 @@ class MypageController extends Controller
     {
         // $body = Body::find(1);
         $body = Body::where("user_id",Auth::user()->id)->first();
+        $goal = Goal::where("user_id",Auth::user()->id)->first();
 
-        return view('user.mypage',["body"=>$body]);
+        return view('user.mypage',["body"=>$body],["goal"=>$goal]);
     }
-    
-     
+
 }  

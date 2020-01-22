@@ -24,6 +24,6 @@ class GoalController extends Controller
         $goal->user_id = Auth::user()->id;
         $goal->save();
         
-        return redirect('user/mypage');
+        return redirect('user/profile/create');
     }
 }

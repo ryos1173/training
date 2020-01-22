@@ -26,6 +26,11 @@
                                     <td>{{ $body->weight, 100 }}</td>
                                     <td>{{ $body->bfp, 100 }}</td>
                                     <td>{{ $body->memo, 100 }}</td>
+                                    <td>
+                                        <div>
+                                            <a href="{{ action('User\ProfileController@delete', ['id' => $body->id]) }}">削除</a>
+                                        </div>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

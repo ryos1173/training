@@ -39,29 +39,14 @@ class ProfileController extends Controller
     
      public function index(Request $request)
     {
-        $posts = Body::where("user_id",Auth::user()->id);
-        
+        $posts = Body::where("user_id",Auth::user()->id)->get();
         return view('user.profile.index', ['posts' => $posts]);
     }
 
-    
-    // public function edit(Request $request)
-    // {
-        // $body = Body::find($request->id);
-        // if (empty($body)) {
-        // abort(404);    
-        // }
-    //     return view('user.profile.edit');
-    // }
-    
-    // public function update(Request $request)
-    // {
-        // $this->validate($request, Body::$rules);
-        // $body = Body::find($request->id);
-        // $body_form = $request->all();
-        // unset($body_form['_token']);
-        // $body->fill($body_form)->save();
-        
-    // return redirect('user/mypage');
-    // }
+    public function delete(Request $request)
+    {
+        $body = Body::find($request->id);
+        $body->delete();
+        return redirect('user/profile/index');
+    }
 }
