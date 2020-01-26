@@ -17,6 +17,7 @@
                                 <th>体重</th>
                                 <th>体脂肪率</th>
                                 <th>メモ</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -26,6 +27,7 @@
                                     <td>{{ $body->weight, 100 }}kg</td>
                                     <td>{{ $body->bfp, 100 }}%</td>
                                     <td>{{ $body->memo, 100 }}</td>
+                                    
                                     <td>
                                         <div>
                                             <a href="{{ action('User\ProfileController@delete', ['id' => $body->id]) }}">削除</a>
@@ -35,7 +37,7 @@
                             @endforeach
                         </tbody>
                     </table>
-                    <input type="button" class="back" onclick="history.back()" value="戻る">
+                    <input type="button" class="btn btn-back" onclick="history.back()" value="戻る">
                 </div>
             </div>
         </div>

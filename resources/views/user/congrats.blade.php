@@ -94,7 +94,7 @@
             }
             
             .title{
-                margin-top:200px;
+                margin-top:100px;
                 font-size: 60px;
                 font-weight: 900;
                 animation: color-change 2s linear infinite;
@@ -122,7 +122,6 @@
 
 
 
-
             
         </style>
         </head>
@@ -133,7 +132,7 @@
                     <img alt="" src="/images/goal1.png">バルクアップ成功！！<img alt="" src="/images/goal1.png">
                 </div>
                 <div style="text-align: center; margin-bottom: 3em;">
-                    <h4>目標体重の<span class="weight">{{ $goal->goal }}</span>kgを達成しました！！</h4>
+                    <h2>目標体重の<span class="weight">{{ $goal->goal }}</span>kgを達成しました！！</h2>
                         <br>
                 </div>
                 <div class="row">

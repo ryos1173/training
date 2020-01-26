@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
               
-                <a $id="logout_icon" class="my-navbar-brand" href="/user/mypage"><img alt="" src="/images/home2.jpeg"></a>
+                <a $id="logout_icon" class="my-navbar-brand" href="/user/mypage"><img alt="" src="/images/home1.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
