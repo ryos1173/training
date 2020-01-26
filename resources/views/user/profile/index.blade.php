@@ -22,9 +22,9 @@
                         <tbody>
                             @foreach($posts as $body)
                                 <tr>
-                                    <th>{{ $body->created_at->format('Y.m.d') }}</th>
-                                    <td>{{ $body->weight, 100 }}</td>
-                                    <td>{{ $body->bfp, 100 }}</td>
+                                    <td>{{ $body->created_at->format('Y.m.d') }}</th>
+                                    <td>{{ $body->weight, 100 }}kg</td>
+                                    <td>{{ $body->bfp, 100 }}%</td>
                                     <td>{{ $body->memo, 100 }}</td>
                                     <td>
                                         <div>
@@ -35,7 +35,7 @@
                             @endforeach
                         </tbody>
                     </table>
-                    <input type="button" onclick="history.back()" value="戻る">
+                    <input type="button" class="back" onclick="history.back()" value="戻る">
                 </div>
             </div>
         </div>

@@ -19,6 +19,9 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                background-image:url('/images/21389.jpg');
+                background-size: cover;
+
             }
 
             .full-height {
@@ -41,12 +44,20 @@
                 top: 18px;
             }
 
-            .content {
+            .content-top {
                 text-align: center;
+                padding: 20px;
             }
 
             .title {
                 font-size: 84px;
+                color: #fff;
+                font-weight: 900;
+            }
+            
+            h4 {
+                color: #fff;
+                font-weight: bold;
             }
 
             .links > a {
@@ -62,6 +73,28 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            
+            .btn-primary {
+                  display: inline-block;
+                  padding: 0.5em 1em;
+                  text-decoration: none;
+                  border-radius: 4px;
+                  color: #ffffff;
+                  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+                  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+                  border-bottom: solid 3px #5e7fca;
+                }
+                
+                .btn-primary:active {
+                  -webkit-transform: translateY(4px);
+                  transform: translateY(4px);
+                  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+                  border-bottom: none;
+                }
+
+
+
+            
         </style>
     </head>
     <body>
@@ -80,7 +113,7 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="content-top">
                 <div class="title m-b-md">
                     BLUK LOG
                 </div>

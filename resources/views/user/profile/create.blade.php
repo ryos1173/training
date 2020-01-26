@@ -19,31 +19,26 @@
                     @endif
                     <div class="form-group row">
                         <div class="col-md-10">
-                            <input type="number" class="form-control" name="weight" value="{{ old('weight') }}" >
-                        </div>
-                    </div>
-                    <!--<div class="form-group row">-->
-                    <!--    <div class="col-md-10">-->
-                    <!--        <input type="number" class="form-control" name="gole" value="{{ old('gole') }}" placeholder="目標の体重">-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <div class="form-group row">
-                        <div class="col-md-10">
-                            <input type="number" class="form-control" name="bfp" value="{{ old('bfp') }}"　placeholder="体脂肪率">
+                            <input type="number" class="form-control" name="weight" value="{{ old('weight') }}"placeholder="現在の体重">
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-10">
-                            <textarea class="form-control" name="memo" rows="10"　placeholder="メモ"></textarea>
+                            <input type="number" class="form-control" name="bfp" value="{{ old('bfp') }}"placeholder="体脂肪率">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="memo" rows="10"placeholder="メモ（例：今日の食事内容やトレーニング内容など）"></textarea>
                         </div>
                     <div class="form-group row">
-                        <label class="col-md-2">画像</label>
+                        <label class="col-md-2 image-up" >画像</label>
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image">
                         </div>
                     </div>
                     {{ csrf_field() }}
-                    <input type="button" onclick="history.back()" value="戻る">
+                    <input type="button"  class="btn btn-back" onclick="history.back()" value="戻る">
                     <input type="submit" class="btn btn-primary" value="登録">
                 </from>
             </div>

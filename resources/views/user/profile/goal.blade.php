@@ -24,7 +24,7 @@
                     </div>
                     
                     {{ csrf_field() }}
-                    <input type="button" onclick="history.back()" value="戻る">
+                    <input type="button" class="btn btn-back" onclick="history.back()" value="戻る">
                     <input type="submit" class="btn btn-primary" value="登録">
                 </from>
             </div>
