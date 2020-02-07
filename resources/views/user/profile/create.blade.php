@@ -31,11 +31,6 @@
                         <div class="col-md-10">
                             <textarea class="form-control" name="memo" rows="10"placeholder="メモ（例：今日の食事内容やトレーニング内容など）"></textarea>
                         </div>
-                    <div class="form-group row">
-                        <label class="col-md-2 image-up" >画像</label>
-                        <div class="col-md-10">
-                            <input type="file" class="form-control-file" name="image">
-                        </div>
                     </div>
                     {{ csrf_field() }}
                     <input type="button"  class="btn btn-back" onclick="history.back()" value="戻る">

@@ -20,14 +20,14 @@ class ProfileController extends Controller
         $this->validate($request, Body::$rules);
         $body = new Body;
         $form = $request->all();
-        if (isset($form['image'])) {
-        $path = $request->file('image')->store('public/image');
-        $body->image_path = basename($path);
-        } else {
-          $body->image_path = null;
-        }
+        // if (isset($form['image'])) {
+        // $path = $request->file('image')->store('public/image');
+        // $body->image_path = basename($path);
+        // } else {
+        //   $body->image_path = null;
+        // }
         unset($form['_token']);
-        unset($form['image']);
+        // unset($form['image']);
         $body->fill($form);
         $body->user_id = Auth::user()->id;
                 // dd($body);

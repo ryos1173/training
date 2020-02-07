@@ -18,7 +18,6 @@ class CreateBodiesTable extends Migration
             $table->integer('weight');
             $table->integer('bfp');
             $table->string('memo');  
-            $table->string('image_path')->nullable(); 
             $table->integer('user_id');  
             $table->timestamps();
         });
